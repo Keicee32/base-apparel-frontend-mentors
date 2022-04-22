@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Josefin Sans", serif;
+    color: hsl(0, 36%, 70%);
+    font-weight: 400;
+    /* box-sizing: border-box; */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    margin: 0;
+    color: #000;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 13px;
+}
+
+.bg-light,
+::placeholder {
+    color: hsl(0, 36%, 70%);
+}
+
+
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: 50px auto 0;
+    box-shadow: 2px 5px 10px;
+}
+
+.text-section {
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-size: cover;
+    padding: 3.5rem;
+    padding-right: 5px;
+}
+
+.card {
+    width: 80%;
+}
+
+.logo {
+    width: 150px;
+    height: 30px;
+    margin: 0 0 100px;
+}
+
+.girl-pose {
+    width: 400px;
+}
+
+.img-input {
+    background: hsl(0, 93%, 68%);
+    width: 15px;
+    border-radius: 40px;
+    padding: 4.5px 20px;
+    transform: translate(330px, 67px);
+    cursor: pointer;
+}
+
+.img-input:hover, 
+.img-input:focus {
+    background: palevioletred;
+    
+}
+
+.arrow {
+    width: 15px;
+}
+
+.subscribe {
+    padding: 10px 30px;
+    width: 300px;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 40px;
+    outline: none;
+    margin-top: 30px;
+}
+
+.hero-mobile {
+    display: none;
+}
+
+.error {
+    padding-left: 30px;
+}
+
+.error-sign {
+    width: 25px;
+    transform: translate(290px, -33px);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+@media screen and (min-width: 350px) and (max-width: 450px) {
+    .container {
+        width: 100%;
+        margin: 50px auto 0;
+        box-shadow: none;  
+    }
+
+    .logo, 
+    .card p {
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 0px;
+    }
+
+    h1 {
+        align-items: center;
+    }
+
+    .text-section {
+        padding: 0;
+        background: #fff;
+    }
+
+    .hero-mobile {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .picture-section {
+        display: none;
+    }
+
+    .img-input {
+        transform: translate(260px, 39px);
+    }
+
+    .subscribe {
+        width: 200px;
+        margin: 0 40px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+
+    .error-sign {
+        width: 20px;
+        transform: translate(-119px, 5px);
+    }
+    
+    .hidden {
+        visibility: hidden;
+    }
+}
